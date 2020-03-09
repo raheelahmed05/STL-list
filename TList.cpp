@@ -4,6 +4,8 @@
 #include<iterator>
 using namespace std;
 
+double closeDiff = 1.e-10;
+
 template <class T>
 void showlist(list <T> g)
 {
@@ -15,7 +17,7 @@ void showlist(list <T> g)
 
 bool isClose(double a, double b)
 {
-    return (abs(a - b) < 1.e-6);
+    return (abs(a - b) < closeDiff);
 }
 
 void main()
